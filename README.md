@@ -1,3 +1,4 @@
+
 # React Native Boilerplate
 
 ![React Native](https://img.shields.io/badge/React_Native-0.78.2-blue)
@@ -9,22 +10,22 @@
 
 A modern, production-ready React Native boilerplate with TypeScript support, focusing on best practices, scalability, and developer experience. This boilerplate includes authentication flows, theming support, RTL handling, and a robust project structure.
 
-## Features
+---
 
-- 🔐 **Authentication Flow**: Complete login and OTP verification using react-native-otp-entry
-- 🌓 **Theme Support**: Dynamic light/dark theme switching with context
-- 🌐 **Multi-language Support**: RTL/LTR with i18next integration
-- 📱 **Responsive Design**: Adapts to different screen sizes with proper scaling
-- 🧩 **Modular Architecture**: Clean and maintainable code structure
-- 🔄 **State Management**: Redux Toolkit with proper action handling
-- 🎨 **SVG Support**: Vector graphics with react-native-svg and transformer
-- 🔒 **Secure Storage**: Encrypted storage with rn-secure-storage
-- 💫 **Animations**: Smooth animations with react-native-reanimated
-- 🚀 **Fast Development**: Hot reloading and developer tools
-- 🛡️ **Type Safety**: Full TypeScript integration
-- 🎯 **Navigation**: React Navigation 7 with bottom tabs and native stack
+## ✅ Why This Boilerplate?
 
-## Project Architecture
+This boilerplate is built with a **robust and thoughtfully organized folder structure**, making it easy for any developer to get started quickly. Whether building a scalable app or learning React Native, this setup offers a strong foundation with essential tools and structure in place.
+
+### ✅ Easy to Use and Extend
+
+- **Well-organized architecture**: Clean separation of logic, UI, configuration, and business logic.
+- **Plug-and-play**: Clone → Install → Run.
+- **Out-of-the-box features** like theming, localization, authentication, Redux Toolkit setup, and secure storage.
+- **Developer-friendly tools**: ESLint, Prettier, TypeScript, and testing setup already integrated.
+
+---
+
+## 📁 Folder Structure
 
 ```
 .
@@ -42,197 +43,187 @@ A modern, production-ready React Native boilerplate with TypeScript support, foc
 │   ├── redux/              # State management
 │   ├── screens/            # Screen components
 │   ├── styles/             # Global styles
-│   ├── typings/           # Global TypeScript types
-│   └── utils/             # Utility functions
+│   ├── typings/            # Global TypeScript types
+│   └── utils/              # Utility functions
 ├── patches/                # Patch files for dependencies
-├── vendor/                # Vendor files
-├── .eslintrc.js           # ESLint configuration
-├── .prettierrc.js         # Prettier configuration
-├── babel.config.js        # Babel configuration
-├── metro.config.js        # Metro bundler configuration
-├── tsconfig.json          # TypeScript configuration
-└── package.json           # Project dependencies
+├── vendor/                 # Vendor files
+├── .eslintrc.js            # ESLint configuration
+├── .prettierrc.js          # Prettier configuration
+├── babel.config.js         # Babel configuration
+├── metro.config.js         # Metro bundler configuration
+├── tsconfig.json           # TypeScript configuration
+└── package.json            # Project dependencies
 ```
 
-## Technology Stack
+---
+
+## 🚀 Features
+
+- 🔐 **Authentication Flow**: Complete login and OTP verification using `react-native-otp-entry`
+- 🌓 **Theme Support**: Dynamic light/dark theme switching with context
+- 🌐 **Multi-language Support**: RTL/LTR with `i18next` integration
+- 📱 **Responsive Design**: Scales well on different screen sizes
+- 🧩 **Modular Architecture**: Clean, maintainable folder structure
+- 🔄 **State Management**: Redux Toolkit with async support
+- 🎨 **SVG Support**: Vector graphics with `react-native-svg`
+- 🔒 **Secure Storage**: Encrypted storage using `rn-secure-storage`
+- 💫 **Animations**: Smooth transitions with `react-native-reanimated`
+- 🛠 **Developer Tools**: Pre-configured ESLint, Prettier, Jest
+- 🛡️ **Type Safety**: Complete TypeScript support
+- 🎯 **Navigation**: React Navigation v7 with native stack and bottom tabs
+
+---
+
+## 🧱 Technology Stack
 
 ### Core
-- **React Native**: v0.78.2
-- **TypeScript**: v5.0.4
-- **React**: v19.0.0
+- **React Native**: 0.78.2
+- **TypeScript**: 5.0.4
+- **React**: 19.0.0
 
-### State Management & Data Flow
-- **Redux**: v5.0.1
-- **React Redux**: v9.2.0
-- **Redux Toolkit**: v2.6.1
+### State Management
+- **Redux**: 5.0.1
+- **React Redux**: 9.2.0
+- **Redux Toolkit**: 2.6.1
 
 ### Navigation
-- **@react-navigation/native**: v7.1.5
-- **@react-navigation/native-stack**: v7.3.9
-- **@react-navigation/bottom-tabs**: v7.3.9
+- **@react-navigation/native**: 7.1.5
+- **@react-navigation/native-stack**: 7.3.9
+- **@react-navigation/bottom-tabs**: 7.3.9
 
-### UI & Animations
-- **react-native-reanimated**: v3.17.2
-- **react-native-svg**: v15.11.2
-- **react-native-modal**: v14.0.0-rc.1
-- **react-native-bootsplash**: v6.3.4
+### UI & Animation
+- **react-native-reanimated**: 3.17.2
+- **react-native-svg**: 15.11.2
+- **react-native-modal**: 14.0.0-rc.1
+- **react-native-bootsplash**: 6.3.4
 
 ### Internationalization
-- **i18next**: v24.2.3
-- **react-i18next**: v15.4.1
-- **intl-pluralrules**: v2.0.1
+- **i18next**: 24.2.3
+- **react-i18next**: 15.4.1
+- **intl-pluralrules**: 2.0.1
 
 ### Security & Storage
-- **rn-secure-storage**: v3.0.1
+- **rn-secure-storage**: 3.0.1
 
-### Development & Testing
-- **jest**: v29.6.3
-- **eslint**: v8.19.0
-- **prettier**: v2.8.8
-- **babel-plugin-module-resolver**: v5.0.2
+### Development Tools
+- **Jest**: 29.6.3
+- **ESLint**: 8.19.0
+- **Prettier**: 2.8.8
+- **babel-plugin-module-resolver**: 5.0.2
 
-## Setup and Installation
+---
+
+## ⚙️ Setup and Installation
 
 ### Prerequisites
+
 - Node.js >= 18
-- Ruby (for iOS development)
-- CocoaPods (for iOS development)
-- Android Studio (for Android development)
-- Xcode (for iOS development)
+- Ruby (for iOS build)
+- CocoaPods (for iOS)
+- Xcode (for iOS)
+- Android Studio (for Android)
 
 ### Installation Steps
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone <repository-url>
    cd rn_boilerplate
    ```
 
-2. Install dependencies:
+2. **Install dependencies:**
    ```bash
    npm install
    # or
    yarn install
    ```
 
-3. iOS specific setup:
+3. **Install CocoaPods (for iOS):**
    ```bash
    cd ios
    pod install
    cd ..
    ```
 
-4. Start the application:
+4. **Run the app:**
    ```bash
-   # Start Metro bundler
+   # Start Metro
    npm start
-   # or
-   yarn start
 
-   # iOS
+   # Run on iOS
    npm run ios
-   # or
-   yarn ios
 
-   # Android
+   # Run on Android
    npm run android
-   # or
-   yarn android
    ```
 
-## Core Features Implementation
+---
 
-### Theme System
+## 🔌 Feature Implementations
 
-The app uses a context-based theme system:
+### 🌙 Theme System
 
-```typescript
-// Usage in components
+```ts
+// Usage in component
 const { theme } = useTheme();
 const colors = Colors[theme];
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.background
-  }
-});
 ```
 
-### Internationalization
+### 🌍 Internationalization
 
-Built-in i18next integration:
-
-```typescript
-// Using translations
+```ts
 import { useTranslation } from 'react-i18next';
 
 const { t } = useTranslation();
 <TextComp text={t('WELCOME')} />
 ```
 
-### Navigation Setup
+### 🧭 Navigation Setup
 
-```typescript
-// Navigation configuration
+```ts
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
 ```
 
-### Redux Integration
+### 🧠 Redux Toolkit
 
-```typescript
-// Store setup with Redux Toolkit
+```ts
 import { configureStore } from '@reduxjs/toolkit';
 
 const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) => 
-    getDefaultMiddleware({
-      serializableCheck: false,
-    }),
+    getDefaultMiddleware({ serializableCheck: false }),
 });
 ```
 
-### Secure Storage
+### 🔐 Secure Storage
 
-```typescript
-// Using secure storage
+```ts
 import SecureStorage from 'rn-secure-storage';
 
-await SecureStorage.setItem('key', 'value');
-const value = await SecureStorage.getItem('key');
+await SecureStorage.setItem('token', '12345');
+const token = await SecureStorage.getItem('token');
 ```
 
-## Development Guidelines
+---
 
-### Code Style
-- Use functional components with hooks
-- Follow TypeScript best practices
-- Use proper component file structure
-- Implement proper error handling
-- Follow ESLint and Prettier configurations
+## 🧭 Development Guidelines
 
-### Performance Optimization
-- Implement proper React.memo usage
-- Use proper list rendering techniques
-- Optimize image assets
-- Implement proper navigation preloading
+- ✅ Use **functional components** and **React hooks**
+- ✅ Follow **TypeScript** best practices
+- ✅ Keep components small and focused
+- ✅ Use **ESLint** and **Prettier** for code consistency
+- ✅ Use **React Navigation** and **Redux Toolkit** as structured
 
-### Security Best Practices
-- Use secure storage for sensitive data
-- Implement proper API error handling
-- Follow platform-specific security guidelines
-- Implement proper authentication flow
+---
 
-## Available Scripts
+## 📜 Available Scripts
 
-- `npm start` - Start the Metro bundler
-- `npm run ios` - Run the iOS app
-- `npm run android` - Run the Android app
-- `npm run lint` - Run ESLint
-- `npm run test` - Run Jest tests
-
+- `npm start` – Start Metro bundler
+- `npm run ios` – Run the app on iOS simulator
+- `npm run android` – Run the app on Android emulator
+- `npm run lint` – Lint the codebase
+- `npm run test` – Run Jest unit tests
