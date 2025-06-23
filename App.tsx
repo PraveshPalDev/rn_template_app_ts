@@ -2,7 +2,7 @@
  * @file App.tsx
  * @description Root application component that initializes core app functionality
  * including fonts, internationalization, Redux store, and navigation.
- * 
+ *
  * This component handles:
  * - Custom font loading
  * - RTL configuration (explicitly disabled for controlled management)
@@ -12,27 +12,26 @@
  * - SplashScreen management
  */
 
-import "@/lang";
+import '@/lang';
 import Routes from '@/navigation/Routes';
-import store from "@/redux/store";
-import React, { useEffect, useLayoutEffect } from 'react';
-import { I18nManager } from "react-native";
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Provider } from "react-redux";
-import { ThemeProvider } from '@/context/ThemeContext';
-import { getLocalItem } from "@/utils/checkStorage";
-import BootSplash from "react-native-bootsplash";
+import store from '@/redux/store';
+import React, {useEffect, useLayoutEffect} from 'react';
+import {I18nManager} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {Provider} from 'react-redux';
+import {ThemeProvider} from '@/context/ThemeContext';
+import {getLocalItem} from '@/utils/checkStorage';
+import BootSplash from 'react-native-bootsplash';
 
 /**
  * Main application component that serves as the entry point for the app.
- * 
+ *
  * @returns {JSX.Element | null} The rendered app or null during font loading
  */
 const App = () => {
-
   /**
    * Setup effect hook that runs on component mount and when font loading status changes
-   * 
+   *
    * @effects
    * - Configures RTL behavior (currently disabled for manual control)
    * - Initializes storage by retrieving persisted user settings
@@ -51,12 +50,10 @@ const App = () => {
 
     init().finally(async () => {
       setTimeout(async () => {
-        BootSplash.hide({ fade: true });
+        BootSplash.hide({fade: true});
       }, 1500);
     });
-
   }, []);
-
 
   /**
    * Main app structure with providers in the following order:
