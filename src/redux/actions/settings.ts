@@ -8,7 +8,7 @@ const { dispatch } = store;
 
 export const changeLanguageState = (language: LanguageInterface) => {
     secureStorage.setObject("LANGUAGE", language).then(() => {
-        console.log("languagelanguage", language)
+        console.log("language", language)
         i18next.changeLanguage(language.sortName);
         dispatch(saveDefaultLanguage({ name: language.name, sortName: language.sortName }))
     })

@@ -6543,7 +6543,7 @@ react-native-animatable@1.4.0:
   dependencies:
     prop-types "^15.8.1"
 
-react-native-bootsplash@^6.3.4:
+react-native-bootsplash@^6.3.9:
   version "6.3.9"
   resolved "https://registry.npmjs.org/react-native-bootsplash/-/react-native-bootsplash-6.3.9.tgz"
   integrity sha512-zy0eNHrH1uncTZG/imS1LDBrIuPY7lLey3bDrMVXQ7bHn8sSqrBzn+MXzYtGhqZRULQcEM0rXQlY3WI+xFnkjQ==

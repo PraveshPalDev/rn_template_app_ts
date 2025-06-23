@@ -33,7 +33,7 @@ const App = () => {
    * Setup effect hook that runs on component mount and when font loading status changes
    *
    * @effects
-   * - Configures RTL behavior (currently disabled for manual control)
+   * - Configures RTL behavior (currently diwsabled for manual control)
    * - Initializes storage by retrieving persisted user settings
    * - Hides the splash screen once fonts are loaded or an error occurs
    */
